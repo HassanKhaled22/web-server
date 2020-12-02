@@ -16,7 +16,7 @@ console.log('hi from client side')
 // })
 
 let weather= ((address)=>{
-   fetch(`http://localhost:3000/weather?address=${address}`).then(r=>{
+   fetch(`/weather?address=${address}`).then(r=>{
 r.json().then(e=>{
     
     mes1.textContent=e.location;
